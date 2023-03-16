@@ -14,7 +14,7 @@ const Brands = () => {
 
   useEffect(() => {
     getBrands();
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <Box>

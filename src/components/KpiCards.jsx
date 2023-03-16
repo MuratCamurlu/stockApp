@@ -8,14 +8,6 @@ import { useSelector } from "react-redux";
 const KpiCards = () => {
   const { sales, purchases } = useSelector((state) => state.stock);
 
-  // const totalSales = sales
-  //   ?.map((sale) => Number(sale.price_total))
-  //   .reduce((acc, val) => acc + val, 0);
-
-  // const totalPurchases = purchases
-  //   ?.map((purchase) => Number(purchase.price_total))
-  //   .reduce((acc, val) => acc + val, 0);
-
   const total = (data) =>
     data
       ?.map((item) => Number(item.price_total))
